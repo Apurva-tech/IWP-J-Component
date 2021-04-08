@@ -1,0 +1,158 @@
+<!DOCTYPE html >
+<meta charset="utf-16" />
+<html>
+    <link rel="stylesheet" text="text/css" href="main.css" />
+    <body>
+        <div id="container" style="top:1%">
+            <form action="#">
+                <h1>Startup Sign Up</h1>
+                <hr id="header_seperator" />
+                <div class="text_field_container">
+                    <input type="text"  placeholder=" " required />
+                    <span></span>
+                    <label>Company Name</label>         
+                </div>
+
+                <div class="text_field_container">
+                    <input type="text" placeholder=" " pattern="^(U|L)\d{5}[A-Z]{2}\d{4}(PTC|PLC|SGC|OPC|NPL)\d{6}$" required />
+                    <span></span>
+                    <label>Company Incorporation Number</label>         
+                </div>
+
+                <div class="text_field_container">
+                    <input type="text" placeholder=" " pattern="^[a-z0-9_]+@[a-z]+(\.[a-z]+)+$" required />
+                    <span></span>
+                    <label>Company Email</label>         
+                </div>
+                
+                <div class="text_field_container">
+                    <input type="password" placeholder=" " required />
+                    <span></span>
+                    <label>Password</label>         
+                </div>
+
+                <div class="text_field_container">
+                    <input type="password" placeholder=" " required />
+                    <span></span>
+                    <label>Retype Password</label>         
+                </div>
+
+                <table>
+                    <tr>
+                        <td class="left" id="firstl"> Nature of the entity: </td>
+                        <td class="right" id="firstr">
+                            <select>
+                                <option>-Select-</option>
+                                <option>Private Limited Company</option>
+                                <option>Partnership firm</option>
+                                <option>Limited Liability Partnership</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="left">Stage: </td>
+                        <td class="right">
+                            <select>
+                                <option>-Select-</option>
+                                <option>Ideation</option>
+                                <option>Validation</option>
+                                <option>Early Traction</option>
+                                <option>Scaling</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="left" colspan="2"> 
+                            <div class="text_field_container id_container">
+                                <input type="url"  placeholder=" " required />
+                                <span></span>
+                                <label>Website link</label>         
+                            </div> 
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="left" colspan="2"> 
+                            <div class="text_field_container id_container">
+                                <input type="url"  placeholder=" " required />
+                                <span></span>
+                                <label>Mobile App link</label>         
+                            </div> 
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="left" colspan="2"> 
+                            <div class="text_field_container id_container">
+                                <input type="number" placeholder=" " min=0 required />
+                                <span></span>
+                                <label>Funds Raised</label>         
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="left"> Funded/Bootstrapped: </td>
+                        <td class="right">
+                            <input type="radio" name="funded/bootstrapped" /> Funded 
+                            <input type="radio" name="funded/bootstrapped" /> Bootstrapped
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="left"> Industry: </td>
+                        <td class="right">
+                            <select>
+                                <option >-Select-</option>
+                                <option>Analytics</option>
+                                <option>Advertising</option>
+                                <option>Architecture</option>
+                                <option>Automotive</option>
+                                <option>Chemicals</option>
+                                <option>Telecommunication & Networking</option>
+                                <option>Agriculture</option>
+                                <option>Events</option>
+                                <option>Fashion</option>
+                                <option>Finannce Technology</option>
+                                <option>Desgin</option>
+                                <option>Education</option>
+                                <option>Renewable Energy</option>
+                                <option>Food Engineering</option>
+                                <option>Internet of Things</option>
+                                <option>Marketing</option>
+                                <option>Retail</option>
+                                <option>Media & Entertainment</option>
+                                <option>Sports</option>
+                                <option>Logistics</option>
+                                <option>Travel & Tourism</option>
+                            </select>         
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="left">Company logo: </td>
+                        <td class="right">
+                            <input type="file" accept="Image/*"/> <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left">Company Details: </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="left" colspan="2" id="textbox"> 
+                            <textarea rows="3" cols="50" id="text_area"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                
+                <input type="submit" id="submit_btn" value = "Create Account"/>
+                <div id="footer">
+                    Already has an account? Go to <a href="">Login</a>.
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
