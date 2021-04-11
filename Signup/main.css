@@ -1,5 +1,8 @@
 body {
-    background:rgb(28, 173, 160);
+    background-color: #1CADA0;
+    background-image:url("../cover_startup.jpeg");
+    background-position:center;
+    background-size: cover;
 }
 
 h1 {
